@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" parallel="tests" name="Suite">
+
+  <test thread-count="20" name="AmazonTest_Windows11_Chrome_Test" enabled="true">
+    <parameter name="platformName" value="Windows 10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="com.lambdatest.Amazon_iPhone13_PriceTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test thread-count="20" name="AmazonTest_Windows11_FireFox_Test" enabled="true">
+    <parameter name="platformName" value="Windows 10"/>
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="com.lambdatest.Amazon_iPhone13_PriceTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
